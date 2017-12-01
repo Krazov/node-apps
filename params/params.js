@@ -9,7 +9,7 @@ console.log(
         .split('--')
         .filter(string => string)
         .map(param => param.trim().split(' '))
-        .map(([key, ...params]) => [key, params.join(' ')])
+        .map(([param, ...pieces]) => [param, pieces.join(' ')])
         // .sort((param1, param2) => param1 > param2) // obsolete step
         .reduce((final, [param, value]) => Object.assign(final, {[param]: Number(value) || value}), {})
 );

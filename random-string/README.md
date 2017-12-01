@@ -4,7 +4,7 @@ Application generates random string from characters: "abcdefghijklmnopqrstuvwxyz
 
 ## Params
 
-* `limit` - the length of string (default: 10, max: 6960)
+* `limit` - the length of string (default: 10)
 * `difference` - difference beetween indexes of two consequtive characters in string (default: 2)
 
 ## Examples
